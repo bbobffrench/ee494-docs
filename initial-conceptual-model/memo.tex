@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{pgfgantt}
 \usepackage{float}
+\usepackage{cite}
 
 \pagenumbering{gobble}
 \setlength{\parindent}{0in}
@@ -18,7 +19,7 @@
 \subsection*{Problem Definition}
 In disaster relief situations (earthquakes, tornadoes, etc.), rescue efforts must first search for people that require assistance before deploying a rescue team to that location. This searching stage consumes critical time in which lives could be saved, and spreads resources thin as a result of having to split resources between searching and rescuing. Our projects aim is not to eliminate the searching step entirely, as the Buffalo Byte has limited resources and could not hope to achieve the same effectiveness, mostly due to the sensor limitations. Our aim is instead, to provide a quick preliminary survey of the area, providing information such as the areas where people in need of rescue are more concentrated, as well as specific locations where people in need of rescue are suspected to be. Although our project cannot be relied on as a standalone system, it will quickly perform preliminary search tasks, freeing up search team resources for more specialized tasks. The Buffalo Byte platform fits our needs well as they are small and do not pose the risk of causing harm accidentally, and they are cheap and easy to mass produce. The latter is especially important as it is inevitable that not all the Buffalo Bytes will be able to be retrieved after they are deployed. If we were to use a more sophisticated platform, this could result in heavy monetary losses but by using the Buffalo Byte, monetary losses will be minimal.
 \subsection*{Alternative Solutions}
-\underline{RecoNode}\\[0.5\baselineskip]
+\underline{RecoNode} \cite{RecoNode}\\[0.2\baselineskip]
 Our Buffalo Byte mesh network surpasses alternatives by balancing cost, scalability, and rapid deployment. Unlike RecoNode’s complex, custom-built hardware, Buffalo Byte leverages off-the-shelf components, making it faster, cheaper, and easier to implement. Other systems have significant trade-offs: Heterogeneous Robot Teams enable specialized roles but require complex coordination and expensive hardware. Tethered Systems provide reliable power but severely limit mobility. WSAC Networks support distributed control but demand precise synchronization and high computational power. Dual-Baseband Radios enhance network reliability but are difficult to integrate with commercial components. Vision-Based AI aids navigation but is impractical for smaller robots due to high processing needs. RTOS improves responsiveness but adds design complexity. Our tiny, agile Buffalo Byte robots excel in disaster scenarios, navigating tight spaces, quickly forming resilient networks, and working as a swarm. While RecoNode prioritizes high-powered, reconfigurable computing, Buffalo Byte focuses on efficiency, adaptability, and real-world usability, making it the superior choice for search and rescue.
 \subsection*{Proposed Approach}
 The approach we plan to take is to create a mesh network using a large number of Buffalo Bytes, and a central node/server, hosted on a Raspberry Pi or similar. Our system will be flexible, allowing a dynamic number of Buffalo Bytes to be used, which could be anywhere from tens to multiple hundreds depending on the scale of the use case. The Buffalo Bytes will travel across the affected area and take sensor readings at certain points specified by the main node. If human presence is detected, the Buffalo Byte will send it's location through the mesh network back to the main node to signify that there may be someone in need of rescuing at that location.
@@ -104,5 +105,9 @@ When comparing possible approaches to designing a subsystem (e.g. sensor type, p
     \ganttbar{4}{14}{16}\\
 	\ganttbar{5}{17}{20}
 \end{ganttchart}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
 
 \end{document}
