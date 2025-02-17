@@ -1,0 +1,30 @@
+Overview of your problem: 
+- Alternative Solutions: 
+7 points: Some alternatives are discussed but not very in-depth. Their significance and shortcomings are not highlighted. References are provided but not appropriately included.
+
+You can improve this by further elaborating on the need of tiny little robots such as the Buffalo Bytes. What can they do that other alternative solutions cannot do?
+Also, you need to provide more details about the alternative solutions (you just mention a few of them, without describing them) and be clear about what they do and what they don't do. 
+
+Conceptual Model: 
+- Visual
+15 points: Needs more detail - a visual snapshot that does not include enough detail
+
+What is your "main node" in your CM? Is it a base station? A laptop? another Buffalo Byte? It is not clear. 
+In the flow chart, where are the "start" and "end" nodes? It is also not very clear what this flow chart represent, you need to provide more context and explanation.
+
+- Text description:
+The explanation of your CM is missing. Please describe and explain your conceptual model in words.
+
+Measure of success: 
+- Measure of Success:
+7 points: The considered design factors are not enough to describe the success of the project
+Indicate target values for each (or most of the indicators) that you listed. For instance, to assess the success of your project you can indicate target values for latency and packet loss. Also, your indicators need to be more specific and you need to provide more details and a proper definition for each of them: for instance, what is the latency that you refer to?
+
+- Measurement plan: 
+3.5 points: The plan is provided but is missing some important details
+The plan is provided but is missing some important details
+
+Timeline:
+- Timeline: 
+10 points: A detailed timeline of the project with no names on tasks or lacking detail for individual's hours of accountability.
+The individual timelines are good, however, you are missing a project timeline where you indicate team (as well as individual) activities and milestones. This will really help you in your project management to stay on track with your project plan.
