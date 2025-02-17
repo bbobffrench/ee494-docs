@@ -5,7 +5,6 @@
 \usepackage{pgfgantt}
 \usepackage{float}
 
-
 \pagenumbering{gobble}
 \setlength{\parindent}{0in}
 
@@ -17,13 +16,12 @@
 
 \section*{Project Overview}
 \subsection*{Problem Definition}
-In disaster relief situations (earthquakes, tornadoes, etc.), rescue efforts must first search for people that require assistance before deploying a rescue team to that location. This searching stage consumes critical time in which lives could be saved, and spread resources thin as a result of having to split resources between searching and rescuing. Our project aims to eliminate this step, allowing rescue teams to begin their rescue much sooner, based on a list of suspected rescue locations.
+In disaster relief situations (earthquakes, tornadoes, etc.), rescue efforts must first search for people that require assistance before deploying a rescue team to that location. This searching stage consumes critical time in which lives could be saved, and spreads resources thin as a result of having to split resources between searching and rescuing. Our projects aim is not to eliminate the searching step entirely, as the Buffalo Byte has limited resources and could not hope to achieve the same effectiveness, mostly due to the sensor limitations. Our aim is instead, to provide a quick preliminary survey of the area, providing information such as the areas where people in need of rescue are more concentrated, as well as specific locations where people in need of rescue are suspected to be. Although our project cannot be relied on as a standalone system, it will quickly perform preliminary search tasks, freeing up search team resources for more specialized tasks. The Buffalo Byte platform fits our needs well as they are small and do not pose the risk of causing harm accidentally, and they are cheap and easy to mass produce. The latter is especially important as it is inevitable that not all the Buffalo Bytes will be able to be retrieved after they are deployed. If we were to use a more sophisticated platform, this could result in heavy monetary losses but by using the Buffalo Byte, monetary losses will be minimal.
 \subsection*{Alternative Solutions}
 \underline{RecoNode}\\[0.5\baselineskip]
 While our proposed Buffalo Byte mesh network offers a promising solution, alternative approaches including heterogeneous robot teams, tethered systems, WSAC networks, dual-baseband radios, vision-based AI, and real-time operating systems—can further enhance search and rescue efforts. Unlike RecoNode, which employs fully custom hardware and software, our design utilizes off-the-shelf components, making it significantly more cost-effective, scalable, and easier to deploy. Integrating insights from the RecoNode research will provide a strong technical foundation for designing a more robust disaster relief system.
-
 \subsection*{Proposed Approach}
-The approach we plan to take is to create a mesh network using a large number of Buffalo Bytes, and a central node/server, hosted on a Raspberry Pi or similar. The Buffalo Bytes will travel across the affected area and take sensor readings at certain points specified by the main node. If human presence is detected, the Buffalo Byte will send it's location through the mesh network back to the main node to signify that there may be someone in need of rescuing at that location.
+The approach we plan to take is to create a mesh network using a large number of Buffalo Bytes, and a central node/server, hosted on a Raspberry Pi or similar. Our system will be flexible, allowing a dynamic number of Buffalo Bytes to be used, which could be anywhere from tens to multiple hundreds depending on the scale of the use case. The Buffalo Bytes will travel across the affected area and take sensor readings at certain points specified by the main node. If human presence is detected, the Buffalo Byte will send it's location through the mesh network back to the main node to signify that there may be someone in need of rescuing at that location.
 
 \section*{Conceptual Model}
 \begin{center}
