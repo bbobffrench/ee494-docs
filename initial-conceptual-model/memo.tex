@@ -5,6 +5,7 @@
 \usepackage{pgfgantt}
 \usepackage{float}
 
+
 \pagenumbering{gobble}
 \setlength{\parindent}{0in}
 
@@ -18,8 +19,9 @@
 \subsection*{Problem Definition}
 In disaster relief situations (earthquakes, tornadoes, etc.), rescue efforts must first search for people that require assistance before deploying a rescue team to that location. This searching stage consumes critical time in which lives could be saved, and spread resources thin as a result of having to split resources between searching and rescuing. Our project aims to eliminate this step, allowing rescue teams to begin their rescue much sooner, based on a list of suspected rescue locations.
 \subsection*{Alternative Solutions}
-\underline{RecoNode}: https://ieeexplore.ieee.org/abstract/document/5981569\\[0.5\baselineskip]
-While our proposed Buffalo Byte mesh network offers a promising solution, alternative approaches including heterogeneous robot teams, tethered systems, WSAC networks, dual-baseband radios, vision-based AI, and real-time operating systems can further enhance search and rescue efforts. Unlike RecoNode, which employs fully custom hardware and software, our design utilizes off-the-shelf components, making it significantly more cost-effective, scalable, and easier to deploy. Integrating insights from the RecoNode research will provide a strong technical foundation for designing a more robust disaster relief system.
+\underline{RecoNode}\\[0.5\baselineskip]
+While our proposed Buffalo Byte mesh network offers a promising solution, alternative approaches including heterogeneous robot teams, tethered systems, WSAC networks, dual-baseband radios, vision-based AI, and real-time operating systems—can further enhance search and rescue efforts. Unlike RecoNode, which employs fully custom hardware and software, our design utilizes off-the-shelf components, making it significantly more cost-effective, scalable, and easier to deploy. Integrating insights from the RecoNode research will provide a strong technical foundation for designing a more robust disaster relief system.
+
 \subsection*{Proposed Approach}
 The approach we plan to take is to create a mesh network using a large number of Buffalo Bytes, and a central node/server, hosted on a Raspberry Pi or similar. The Buffalo Bytes will travel across the affected area and take sensor readings at certain points specified by the main node. If human presence is detected, the Buffalo Byte will send it's location through the mesh network back to the main node to signify that there may be someone in need of rescuing at that location.
 
